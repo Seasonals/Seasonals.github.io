@@ -1,1 +1,27 @@
-hello world
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>pictures</title>
+    <style>
+    *{
+        box-sizing: border-box;
+        padding:0;
+        margin:0;
+    }
+    #mypic{
+        max-width: 100vw;
+        max-height: 100vh;
+    }
+    </style>
+</head>
+<body>
+    <picture id="mypic">
+        <source media="(max-width: 799px)"srcset="./images/computer-zoom.jpg">
+        <source media="(min-width: 800px)"srcset="./images/computer-large.jpg">
+        <img src="./images/computer-large.jpg" alt="a desk with computer displaying code">
+    </picture>
+</body>
+</html>
